@@ -1,5 +1,5 @@
 <?php
 
-echo "Hello World, Ki hal hai, ab thik h, kab chalke dikhayega bhai, ab to chalja...finally, its done....final test....."
+echo "Hello World, Ki hal hai, ab thik h, sab dubara kr bhai."
 
 ?>
