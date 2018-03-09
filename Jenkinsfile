@@ -13,7 +13,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building...'
-                sh 'mkdir mandeeptest'
+                sh 'mkdir mandeeptest1'
             }
         }
         stage('Test') {
