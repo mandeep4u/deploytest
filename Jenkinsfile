@@ -14,7 +14,7 @@ pipeline {
             steps {
                 echo 'Building...'
                 bash '''#!/bin/bash 
-		  	mkdir mandeeptest
+		  	"mkdir mandeeptest"
 		'''
             }
         }
