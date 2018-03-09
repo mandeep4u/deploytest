@@ -13,18 +13,13 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building...'
-                bash '''#!/bin/bash 
-		  	"mkdir mandeeptest"
-		'''
+                sh 'mkdir mandeeptest'
             }
         }
         stage('Test') {
             steps {
                 echo 'Testing...'
-                bash '''#!/bin/bash
-			touch mandeeptest/index.php
-			echo "12 > mandeeptest/index.php"
-		'''
+                sh 'echo "12 > mandeeptest/index.php'
             }
         }
     }
