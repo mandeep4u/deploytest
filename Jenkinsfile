@@ -19,7 +19,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing...'
-                sh 'echo "12 > mandeeptest/index.php'
+                sh 'echo 12 > mandeeptest/index.php'
             }
         }
     }
