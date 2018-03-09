@@ -14,7 +14,7 @@ pipeline {
             steps {
                 echo 'Building...'
                 bash '''#!/bin/bash 
-		  	mv index.php /var/www
+		  	mkdir mandeeptest
 		'''
             }
         }
@@ -22,7 +22,8 @@ pipeline {
             steps {
                 echo 'Testing...'
                 bash '''#!/bin/bash
-			echo "12 > index.php"
+			touch mandeeptest/index.php
+			echo "12 > mandeeptest/index.php"
 		'''
             }
         }
