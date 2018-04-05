@@ -23,4 +23,18 @@ pipeline {
             }
         }
     }
+    post {
+      always {
+          script {
+              if (currentBuild.result == null) {
+                  currentBuild.result = 'SUCCESS'    
+              }
+          }    
+          step([$class: 'Mailer',
+            notifyEveryUnstableBuild: true,
+            recipients: "mandeep.singh@scalemonks.com",
+            sendToIndividuals: true])
+      }
+  }
+}
 }

@@ -1,0 +1,6 @@
+node {
+   stage("Checkout")
+     git branch: 'master',
+       credentialsId: 'be106b8f-aa50-4c37-9bd0-d33b953dbc4a',
+       url: 'https://github.com/mandeep4u/deploytest/'
+}
